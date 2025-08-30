@@ -1,0 +1,351 @@
+/* --- Universal & Body Styling --- */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    line-height: 1.6;
+    background: #000;
+}
+/* --- Header & Top Bar --- */
+#header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    position: relative;
+    z-index: 100;
+}
+
+#top-bar {
+    border-bottom: 1px dashed white; /* Dashed border for authentic look */
+    padding-bottom: 5px;
+    margin: 0 50px; /* Sides mein space ke liye */
+    display: flex;
+    justify-content: space-between; /* Content ko dono taraf se align karega */
+    align-items: center;
+}
+
+#top-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* List items ko horizontally align karega */
+    gap: 140px; /* List items ke beech space */
+    margin-left: 100px;
+}
+
+#top-info li {
+    /* iski ab zaroorat nahi hai, kyunki flexbox se kam ho jaayega */
+    /* margin-right: 20px; */
+}
+
+#top-info a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.socials-box {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Social icons ko horizontally align karega */
+    gap: 10px; /* Social icons ke beech space */
+    /* margin-left: 340px; -- Ye hatana hoga responsive design ke liye */
+}
+
+/* Yahan par baaki navbar aur dusra code aayega... */
+
+.socials-box li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-circle-border {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.socials-box a:hover .social-circle-border {
+    background-color: #d11a1a;
+    border-color: #d11a1a;
+}
+
+/* --- Navigation Section with Logo in the Middle --- */
+#nav-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the whole navigation bar */
+    /* align-items: center; */
+    /* border-bottom: 1px dashed white; */
+    padding: 20px 0;
+    font-family: poppins;
+    text-transform: uppercase;
+}
+
+.nav-links-left, .nav-links-right {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links-left {
+    margin-right: 50px; /* Space between left links and logo */;
+}
+
+.nav-links-right {
+    margin-left: 50px; /* Space between logo and right links */
+}
+
+.nav-links-left li, .nav-links-right li {
+    margin: 0 15px;
+}
+
+.nav-links-left a, .nav-links-right a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links-left a:hover, .nav-links-right a:hover {
+    color: #d11a1a;
+}
+
+.nav-logo {
+    display: block;
+}
+
+.nav-logo img {
+    height: 70px; /* Logo ki height */
+}
+
+
+/* --- Navigation Section --- */
+#nav-section {
+    display: flex;
+    flex-direction: row;       /* sab ek line me */
+    justify-content: center;   /* center align */
+    align-items: center;
+    /* border-bottom: 1px dashed white; */
+    padding: 20px 0;
+    margin-top: 20px;
+}
+/* Left & Right Nav Links */
+.nav-links-left, .nav-links-right {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links-left {
+    margin-right: 50px;
+}
+
+.nav-links-right {
+    margin-left: 50px;
+}
+
+.nav-links-left li, .nav-links-right li {
+    margin: 0 15px;
+    border-bottom: 1px dashed white;
+    border-top: 1px dashed white;
+}
+
+.nav-links-left a, .nav-links-right a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links-left a:hover, .nav-links-right a:hover {
+    color: #d11a1a;
+}
+
+/* Logo */
+.nav-logo img {
+    height: 70px;
+}
+
+/* Contact ko neeche alag line me */
+.nav-contact {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav-contact a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+
+}
+
+.nav-contact a:hover {
+    color: #d11a1a;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading .first{
+    color: white;
+    margin-top: 180px;
+
+}
+.heading .second{
+    color: white;
+
+}
+.heading .first h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: poppins;
+}
+.heading .second h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: poppins;
+}
+#about-sec{
+    width: 100%;
+    height: 600px;
+    background-color: #151515;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#about-sec .about{
+    color: #fff;
+    background-color: #151515;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-family: poppins, sans-serif;
+    text-transform: capitalize;
+}
+#about-sec .card{
+    color: #fff;
+    background-color: #fff;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+#about-sec .card img{
+    border-style: none;
+    border-radius: 1px;
+}
+
+#our-spec{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#our-spec h1{
+    justify-content: center;
+    color: rebeccapurple;
+    margin-bottom: 100px;
+} 
+#our-spec p{
+    justify-content: center;
+    color: rebeccapurple;
+    margin-bottom: 100px;
+} 
+
+#our-spec .cards{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+/* 
+#our-spec .card2{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+        margin-top: 100px;
+
+
+}
+#our-spec .card3{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+        margin-top: 100px;
+
+
+}
+
+
+ */
+
+
+
+
+/* --- Responsive Design for Smaller Screens --- */
+@media (max-width: 768px) {
+    #top-bar {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    #top-info {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .socials-box {
+        justify-content: center;
+    }
+
+    #nav-section {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-links-left, .nav-links-right {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .nav-links-left a, .nav-links-right a {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .nav-logo {
+        margin: 10px 0;
+    }
+}
