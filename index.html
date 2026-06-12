@@ -1,151 +1,409 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KABABJEES CLONE</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>Kababjees Fried Chicken</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
   </head>
-  <body class="home-page">
-    <div id="wrapper">
-        <!-- overlay background -->
-         <div class="overlay" data-image-src=""></div>
-         <header id="header">
-            <div id="top-bar">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <ul id="top-info">
-                                <li><a href="email">Phone: 021 111 666 111</a></li>
-                                <li><a href="phone"><span>mail:marketing@kababjees.com</span></a></li>
-                                <li><a href="facebook" target="_blank"><div class="social-circle-border"><i class="fa-brands fa-facebook"></i></div></a></li>
-                                <li><a href="instagram" target="_blank"><div class="social-circle-border"><i class="fa-brands fa-instagram"></i></div></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                                <div id="nav-section">
+  <body>
+    <!-- ══════════════════════════════════
+     TOP BAR
+══════════════════════════════════ -->
+    <div id="top-bar">
+      <div class="top-bar-inner">
+        <ul id="top-info">
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:021111666111">021 111 666 111</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:marketing@kababjees.com">
+              marketing@kababjees.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="socials-box">
+          <li>
+            <a href="#">
+              <div class="social-circle-border">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="social-circle-border">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="social-circle-border">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+     HERO SECTION
+══════════════════════════════════ -->
+    <section id="home" class="hero">
+      <!-- Background Video -->
+      <video autoplay loop muted playsinline class="hero-video">
+        <source src="kababjees background video.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- ══════════════════════════════════
+       NAVBAR (Hero ke andar)
+  ══════════════════════════════════ -->
+      <nav id="navbar">
         <ul class="nav-links-left">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">LOCATION</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#location">Location</a></li>
         </ul>
+
         <div class="nav-logo">
-            <img src="kababjees logo.png" alt="Kababjees Logo" width="360">
+          <img src="kababjees logo.png" alt="Kababjees Logo" />
         </div>
+
         <ul class="nav-links-right">
-            <li><a href="#">ORDER ONLINE</a></li>
-            <li><a href="#">BANK DISCOUNT</a></li>
+          <li>
+            <a href="#order" class="nav-btn"> Order Online </a>
+          </li>
+          <li><a href="#discount">Bank Discount</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </div>
+      </nav>
 
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <p class="hero-tag">Welcome to Kababjees</p>
 
-<!-- Contact ko alag row me rakha -->
-<div class="nav-contact">
-  <a href="#">Contact</a>
-</div>
+        <h1 class="hero-title">
+          The Best Place <br />
+          To Rejoice
+        </h1>
 
-<div class="heading">
-  <div class="first">
-    <h1>The best place to rejoice</h1>
-  </div>
-  <div class="second">
-    <h1>variety of cuisines.</h1>
-  </div>
-</div>
+        <p class="hero-subtitle">
+          Variety of cuisines — from BBQ grill to continental delights
+        </p>
 
-
-
-
-         <div class="xpro-slider-container">
-				 <div id="" class="xpro-slider" style="height: 100vh;">
-						 <div class="xpro-slider-content">
-								<!--ON Slider Item -->
-								 <div class="xpro-slider-item" style="background-image:url(images/bg.jpg);background-position:right center">
-								 	<video poster="Screenshot 2023-11-06 191059.png" width="100%" height="auto"
-autoplay="autoplay" loop muted style="-webkit-filter: brightness(45%); /* Safari */
-  filter: brightness(55%);      position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    
-    object-fit: cover;
-" >  <source
-src="kababjees background video.mp4" type="video/mp4">
-
-    </div>
-             </div>
-         </div>
-         </div>
-         </header>
-                  <!-- about section -->
-
-    <div id="about-sec">
-
-        <div class="about" style="width: 40%; height: 400px;">
-          <h1>About us</h1>
-          <p>We welcome you to explore our taste of the world, in continental and Chinese delights and that's even before you get to the variety and excellence, of our barbecue grill. With warmth service rarely experienced, it is a perfect place of rejoice with family, to soak in the relaxing decor and with deep desire to revisit for once, in never enough! Now with our network of four branches across the city of lights, it is possible to experience the magic, whilst collect the best of memories much more close to home.
-
-Now you can have the goodness of Kababjees delivered at home by just ringing us a bell. Call 111-666-111 for more information.</p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn-red">Explore Menu</a>
+          <a href="#order" class="btn-outline">Order Online</a>
         </div>
-        <div class="card" style="width: 40%; height: 400px;">
-          <div class="img"><img src="Kababjees highway.jpg" alt="Kababjees highway pic" width="100%" height="400px"></div>
-        </div>
-    </div> 
-              <!-- about section -->
-
-    <div id="our-spec">
-      <div class="headandpara">
-        <h1>Our specialities</h1>
-      <p><i>Some of our best Specialities menu</i></p>
-      </div>
-       
-      <div class="cards">
-      <div class="card1">
-        </div>
-
-        <div class="card2">
-        </div>
-
-        <div class="card3">
-        </div> 
       </div>
 
-    </div> 
+      <div class="hero-scroll">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+    <!-- ══════════════════════════════════
+     ABOUT SECTION
+══════════════════════════════════ -->
+    <section id="about" class="about-sec">
+      <div class="about-img">
+        <img src="Kababjees highway.jpg" alt="Kababjees Restaurant" />
+      </div>
+      <div class="about-text">
+        <span class="section-tag">Who We Are</span>
+        <h2>About <span class="red">Kababjees</span></h2>
+        <p>
+          We welcome you to explore our taste of the world, in continental and
+          Chinese delights — and that's even before you get to the variety and
+          excellence of our barbecue grill.
+        </p>
+        <p>
+          With warm service rarely experienced, it is a perfect place to rejoice
+          with family, soak in the relaxing decor, and with a deep desire to
+          revisit. Now with our network of four branches across the city of
+          lights, experience the magic much closer to home.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <h3>4+</h3>
+            <p>Branches</p>
+          </div>
+          <div class="stat">
+            <h3>20+</h3>
+            <p>Years of Excellence</p>
+          </div>
+          <div class="stat">
+            <h3>50+</h3>
+            <p>Menu Items</p>
+          </div>
+        </div>
+        <a href="tel:021111666111" class="btn-red"
+          >Call Now — 021 111 666 111</a
+        >
+      </div>
+    </section>
 
+    <!-- ══════════════════════════════════
+     SPECIALITIES SECTION
+══════════════════════════════════ -->
+    <section id="menu" class="spec-sec">
+      <div class="section-header">
+        <span class="section-tag">Taste the Best</span>
+        <h2>Our <span class="red">Specialities</span></h2>
+        <p>Some of our most loved dishes — crafted with passion</p>
+      </div>
+      <div class="spec-cards">
+        <div class="spec-card">
+          <div class="spec-card-img">
+            <img src="img1.jpeg" alt="Crispy Chicken" />
+            <div class="spec-card-overlay">
+              <button class="btn-red">Order Now</button>
+            </div>
+          </div>
+          <div class="spec-card-body">
+            <h4>Crispy Chicken</h4>
+            <p>Our signature golden crispy fried chicken</p>
+            <span class="price">Rs. 620</span>
+          </div>
+        </div>
+        <div class="spec-card">
+          <div class="spec-card-img">
+            <img src="img2.jpeg" alt="Ultimate Crunch Feast" />
+            <div class="spec-card-overlay">
+              <button class="btn-red">Order Now</button>
+            </div>
+          </div>
+          <div class="spec-card-body">
+            <h4>Ultimate Crunch Feast</h4>
+            <p>A feast for the whole family to enjoy</p>
+            <span class="price">Rs. 1560</span>
+          </div>
+        </div>
+        <div class="spec-card">
+          <div class="spec-card-img">
+            <img src="img3.jpeg" alt="Combo Deal" />
+            <div class="spec-card-overlay">
+              <button class="btn-red">Order Now</button>
+            </div>
+          </div>
+          <div class="spec-card-body">
+            <h4>2 Pcs Combo Deal</h4>
+            <p>Perfect combo for a satisfying meal</p>
+            <span class="price">Rs. 620</span>
+          </div>
+        </div>
+        <div class="spec-card">
+          <div class="spec-card-img">
+            <img src="img4.jpeg" alt="Family Combo" />
+            <div class="spec-card-overlay">
+              <button class="btn-red">Order Now</button>
+            </div>
+          </div>
+          <div class="spec-card-body">
+            <h4>Family Combo 1</h4>
+            <p>The ultimate family treat with all the favorites</p>
+            <span class="price">Rs. 2190</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="#" class="btn-red">View Full Menu</a>
+      </div>
+    </section>
 
+    <!-- ══════════════════════════════════
+     BANK DISCOUNT SECTION
+══════════════════════════════════ -->
+    <section id="discount" class="discount-sec">
+      <div class="discount-inner">
+        <span class="section-tag">Save More</span>
+        <h2>Bank <span class="red">Discounts</span></h2>
+        <p>Enjoy exclusive discounts with your bank cards</p>
+        <div class="discount-cards">
+          <div class="discount-card">
+            <i class="fa-solid fa-credit-card"></i>
+            <h4>HBL Card</h4>
+            <p class="disc-pct">15% OFF</p>
+            <p>On all orders above Rs. 1000</p>
+          </div>
+          <div class="discount-card">
+            <i class="fa-solid fa-credit-card"></i>
+            <h4>MCB Card</h4>
+            <p class="disc-pct">10% OFF</p>
+            <p>On all orders above Rs. 800</p>
+          </div>
+          <div class="discount-card">
+            <i class="fa-solid fa-credit-card"></i>
+            <h4>UBL Card</h4>
+            <p class="disc-pct">12% OFF</p>
+            <p>On all orders above Rs. 900</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ══════════════════════════════════
+     LOCATION SECTION
+══════════════════════════════════ -->
+    <section id="location" class="location-sec">
+      <div class="section-header">
+        <span class="section-tag">Find Us</span>
+        <h2>Our <span class="red">Locations</span></h2>
+        <p>Visit us at any of our branches across Karachi</p>
+      </div>
+      <div class="location-cards">
+        <div class="location-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4>Kababjees Highway</h4>
+          <p>Main Super Highway, Karachi</p>
+          <a href="#" class="btn-outline-sm">Get Directions</a>
+        </div>
+        <div class="location-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4>Kababjees Clifton</h4>
+          <p>Block 5, Clifton, Karachi</p>
+          <a href="#" class="btn-outline-sm">Get Directions</a>
+        </div>
+        <div class="location-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4>Kababjees DHA</h4>
+          <p>Phase 6, DHA, Karachi</p>
+          <a href="#" class="btn-outline-sm">Get Directions</a>
+        </div>
+        <div class="location-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4>Kababjees Gulshan</h4>
+          <p>Block 14, Gulshan-e-Iqbal, Karachi</p>
+          <a href="#" class="btn-outline-sm">Get Directions</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+     CONTACT SECTION
+══════════════════════════════════ -->
+    <section id="contact" class="contact-sec">
+      <div class="contact-inner">
+        <div class="contact-info">
+          <span class="section-tag">Get In Touch</span>
+          <h2>Contact <span class="red">Us</span></h2>
+          <p>
+            We'd love to hear from you. Reach out for reservations, complaints,
+            or feedback.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:021111666111">021 111 666 111</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:marketing@kababjees.com"
+                >marketing@kababjees.com</a
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> Multiple branches across
+              Karachi
+            </li>
+          </ul>
+          <div class="contact-socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" />
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <textarea rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <button class="btn-red w-100">Send Message</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+     FOOTER
+══════════════════════════════════ -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="kababjees logo.png" alt="Kababjees Logo" />
+          <p>The best place to rejoice — variety of cuisines since decades.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#menu">Menu</a>
+          <a href="#location">Locations</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Information</h4>
+          <a href="#">Bank Discount</a>
+          <a href="#">Submit Complaint</a>
+          <a href="#">Blog</a>
+          <a href="#">FAQs</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><i class="fa-solid fa-phone"></i> 021 111 666 111</p>
+          <p><i class="fa-solid fa-envelope"></i> marketing@kababjees.com</p>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kababjees Fried Chicken. All rights reserved.</p>
+        <p>Powered by <a href="#">Indolj</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
   </body>
